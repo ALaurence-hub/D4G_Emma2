@@ -1,0 +1,171 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 10px;
+    font-family: 'Tahoma', sans-serif;
+
+    bottom: 0;
+    width: 100%; height: 50px;
+    background-color: #B5C9B0;
+    color: white;
+    padding: 8px 0 8px 0;
+  }
+
+  .entete{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content : center;
+    width: 100%;
+    height: 210px;
+    font-size: 49px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: #B5C9B0;
+    background-color: #303030;
+    z-index: 3;
+  }
+
+  .titre{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space;
+    z-index: 3;
+
+    padding-top: 55px;
+    height: 210px;
+    background-color: #083B32;
+  }
+
+  .corps{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 140px 0 50px 0;
+  }
+
+  .titre2{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    font-family: "Times New Roman";
+
+    margin: 0px 50px 0px 50px;
+    width: 65%;
+    height: 100px;
+    border-radius: 10px;
+  }
+
+  .article{
+    display: grid;
+
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+    width: 90%;
+    margin: 40px 0 0 0;
+  }
+
+  .boite{
+    width: 250px;
+    height: 300px;
+    background-color:#F5F5F5;
+
+    margin: 10px;
+    padding: 5px;
+  }
+
+  .texte{
+    text-align: justify;
+    margin: 15px;
+  }
+
+  .boutton{
+    display: flex;
+    flex-direction: row;
+
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav{
+      width: 100%;
+      margin: 210px 0px 0px 0px;
+      background-color: white;
+      position: sticky;
+      top: 0px;
+      font-family: 'brookeregular';
+      font-weight: bold;
+      letter-spacing: 5px;
+      font-size: 10px;
+      font-weight: bold;
+      text-align: center;
+      position: fixed;
+      z-index: 3;
+      display : flex;
+      flex-direction : row;
+      justify-content : space-around;
+      align-items : center;
+  }
+
+  nav li{
+      float: left;
+      list-style-type: none;
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      width: 11%; /*100% divisé par le nombre d'éléments de menu*/
+      text-align: center; /*Centre le texte dans les éléments de menu*/
+  }
+
+  nav ul::after{
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  nav a{
+      display: block; /*Toute la surface sera cliquable*/
+      text-decoration: none;
+      color: black;
+      border-bottom: 2px solid transparent; /*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+      padding: 10px 0px; /*Agrandit le menu et espace la bordure du texte*/
+  }
+
+  nav a:hover{
+      color: #01766E;
+      border-bottom: 2px solid #B5C9B0;
+  }
+
+
+  .panier {
+    width : 100vw;
+    height : auto;
+    margin-top : 50px;
+    padding : 8px;
+    display : flex;
+    flex-direction : column;
+    justify-content : flex-start;
+    align-items : center;
+}
